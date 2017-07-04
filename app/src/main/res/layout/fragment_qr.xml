@@ -29,10 +29,9 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="361dp"
-            android:layout_height="wrap_content"
+            android:layout_width="333dp"
+            android:layout_height="369dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1.29"
             android:src="@drawable/escanear" />
     </LinearLayout>
 

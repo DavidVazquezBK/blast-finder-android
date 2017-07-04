@@ -7,17 +7,24 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Un Objeto"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="#ff0505"
+        android:textSize="30dp" />
 
+    <ExpandableListView
+        android:layout_width="345dp"
+        android:layout_height="441dp"
+        android:id="@+id/expandableListView"
+        android:layout_gravity="center" />
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.97"></TableLayout>
-    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" />
+
 </FrameLayout>
