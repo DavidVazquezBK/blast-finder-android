@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blast-finder-android.iml" filepath="$PROJECT_DIR$/blast-finder-android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/librerias/librerias.iml" filepath="$PROJECT_DIR$/librerias/librerias.iml" />
-      <module fileurl="file://$PROJECT_DIR$/librerias/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5.iml" filepath="$PROJECT_DIR$/librerias/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/librerias.iml" filepath="$PROJECT_DIR$/libs/librerias.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5.iml" filepath="$PROJECT_DIR$/libs/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5.iml" />
     </modules>
   </component>
 </project>
