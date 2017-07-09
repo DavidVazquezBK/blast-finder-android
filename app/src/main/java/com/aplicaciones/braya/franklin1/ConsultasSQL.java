@@ -42,7 +42,7 @@ public class ConsultasSQL extends Activity {
 
         bundle = getIntent().getExtras();
 
-        
+
     }
 
 }
