@@ -10,7 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -24,11 +27,17 @@ import android.widget.Toast;
  */
 public class Inmobiliario extends Fragment{
 
+    EditText Elbuscar;
+    TextView nombreM, producto, categoria, notas;
+    Button Bbuscar;
+    private int contentView;
+
+    public void setContentView(int contentView) {
+        this.contentView = contentView;
+    }
 
 
-    Spinner Clasificar;
-
-public interface FlightSearcher{
+    public interface FlightSearcher{
     public void searchForFlight(String Clasificacion);
 
 }
@@ -69,11 +78,35 @@ public interface FlightSearcher{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+        setContentView(R.layout.fragment_inmobiliario);
+
+        nombreM.findViewById(R.id.nombre);
+        producto.findViewById(R.id.producto);
+        categoria.findViewById(R.id.categoria);
+        notas.findViewById(R.id.notas);
+        Elbuscar.findViewById(R.id.botonInmo);
+
+        Elbuscar.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+                ayudaBD db=new ayudaBD(getContext());
+                String buscar=Elbuscar.getText().toString();
+                String[] datos;
+                db.buscar_reg(buscar);
+                nombreM.setText(datos[0]);
+                producto.setText(datos[1]);
+                categoria.setText(datos[2]);
+                notas.setText(datos[3]);
+                Toast.makeText(getContext().datos[3].Toast.LENGHT_SHORT).show();
+            }
+        });
+
         }
-    }
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
